@@ -222,8 +222,8 @@ model.to(device);
 ### Specify Loss Function and Optimizer
 """
 
-learning_rate = 0.001 * 0.5
-momentum=0.7
+learning_rate = 0.0001 * 0.5
+momentum=0.9
 
 
 # specify loss function (categorical cross-entropy)
@@ -234,7 +234,7 @@ optimizer = optim.Adam(model.classifier.parameters(), lr=learning_rate) #### # O
 
 """### Train the network"""
 
-epochs = 150
+epochs = 50
 steps = 0
 running_loss = 0
 valid_loss = 0.0
